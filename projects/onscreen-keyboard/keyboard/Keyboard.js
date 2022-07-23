@@ -21,7 +21,8 @@ const Keyboard = {
         this.elements.keysContainer = document.createElement("div");
 
         // Setup main elements
-        this.elements.main.classList.add("keyboard", "keyboard--hidden");
+        //this.elements.main.classList.add("keyboard", "keyboard--hidden");
+        this.elements.main.classList.add("keyboard");
         this.elements.keysContainer.classList.add("keyboard__keys");
         this.elements.keysContainer.appendChild(this._createKeys());
 
@@ -119,8 +120,11 @@ const Keyboard = {
                     });
 
                     break;
+                    
+                
+                    
 
-                default:
+                 default:
                     keyElement.textContent = key.toLowerCase();
 
                     keyElement.addEventListener("click", () => {
