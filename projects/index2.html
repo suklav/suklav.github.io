@@ -1,0 +1,59 @@
+<html>
+<head>
+<title> Calculator</title>
+<script type="text/javascript" src="js_cal_2.js"></script>
+
+</head>
+
+<body>
+<center>
+<p style="font-weight:bold;font-size: larger;">
+Enter first number :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="first"><br>
+Operator: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="operator" style="margin-left: 6px;"> <br>
+Enter second number : <input id="second" style="margin-left: 2px;"><br>
+
+<p>
+<input type="button" onclick="val(7)" value="7" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val(8)" value="8" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val(9)" value="9" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<input type="button" onclick="Op('+')" value="+" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<br>
+
+<input type="button" onclick="val(4)" value="4" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val(5)" value="5" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val(6)" value="6" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<input type="button" onclick="Op('-')" value="- " style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+
+<br>
+
+<input type="button" onclick="val(1)" value="1" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val(2)" value="2" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val(3)" value="3" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<input type="button" onclick="Op('*')" value="x" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+
+<br>
+
+<input type="button" onclick="val(0)" value="0" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val_dot()" value=". " style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="ev()" value="=" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<input type="button" onclick="Op('÷')" value="÷" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"><br>
+
+<input type="button" onclick="location.reload()" value="Refresh" style="width: 100px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: large;">
+
+<br>
+<p style="font-weight:bold;font-size: larger;">
+<b>Result:<p id="result" style="font-weight:bold;font-size: larger;"></p></b>
+</p>
+</p>
+<hr>
+</p>
+</center>
+</body>
+
+</html>
