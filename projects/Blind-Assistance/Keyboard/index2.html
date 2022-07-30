@@ -1,0 +1,151 @@
+<html>
+<head>
+<title> Calculator</title>
+<script type="text/javascript" src="js_cal_2.js"></script>
+
+</head>
+
+<body>
+<center>
+<p style="font-weight:bold;font-size: larger;">
+  <!--  <input id="first" style=" word-break: break-word; font-weight:bold; height: 106px; width: 508px; ">-->
+    
+    <br>
+<textarea id="first" style=" word-break: break-word; font-weight:bold; height: 106px; width: 508px; font-size: larger;"></textarea>
+
+<p>
+
+    <input type="button" onclick="val('~')" value="~" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+
+    <input type="button" onclick="val('!')" value="!" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+    <input type="button" onclick="val('@')" value="@" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+    <input type="button" onclick="val('#')" value="#" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+    <input type="button" onclick="val('$')" value="$" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+    <input type="button" onclick="val('%')" value="%" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+    <input type="button" onclick="val('^')" value="^" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+    <input type="button" onclick="val('&')" value="&" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+    <input type="button" onclick="val('*')" value="*" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+    <input type="button" onclick="val('(')" value="(" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+    
+    <input type="button" onclick="val(')')" value=")" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+    
+    <input type="button" onclick="val('_')" value="_" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+    
+    <input type="button" onclick="val('+')" value="+" style="width: 120px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+    
+    
+    <br>
+
+    
+<input type="button" onclick="val('`')" value="`" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+
+<input type="button" onclick="val(1)" value="1" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val(2)" value="2" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val(3)" value="3" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val(4)" value="4" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val(5)" value="5" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val(6)" value="6" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val(7)" value="7" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val(8)" value="8" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val(9)" value="9" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<input type="button" onclick="val('-')" value="-" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+
+<input type="button" onclick="val('+')" value="+" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<input type="button" onclick="back()" value="Backspace" style="width: 120px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+
+<br>
+
+
+<input type="button" onclick="val('      ')" value="Tab" style="width: 70px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<input type="button" onclick="val('q')" value="q" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('w')" value="w" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('e')" value="e" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('r')" value="r" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('t')" value="t" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('y')" value="y" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('u')" value="u" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val('i')" value="i" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val('o')" value="o" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<input type="button" onclick="val('p')" value="p" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+
+<input type="button" onclick="val('[')" value="[" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val(']')" value="]" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val('\\')" value="\" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<br>
+
+
+<input type="button" id="cap" onclick="caps()" value="CapsLock" style="width: 75px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: small;"> 
+
+<input type="button" onclick="val('a')" value="a" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('s')" value="s" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('d')" value="d" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('f')" value="f" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('g')" value="g" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('h')" value="h" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('j')" value="j" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val('k')" value="k" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val('l')" value="l" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<input type="button" onclick="val(';')" value=";" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+
+<input type="button" onclick="val('\'')" value="'" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<input type="button" onclick="enter()" value="Enter" style="width: 95px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+
+
+
+<br>
+
+<input type="button" onclick="shift()" value="Shift" style="width: 75px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val('z')" value="z" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('x')" value="x" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('c')" value="c" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('v')" value="v" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('b')" value="b" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('n')" value="n" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('m')" value="m" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val(',')" value="," style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+<input type="button" onclick="val('.')" value="." style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<input type="button" onclick="val('/')" value="/" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('<')" value="<" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('>')" value=">" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val('?')" value="?" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+
+
+
+
+<br>
+
+<input type="button" onclick="ctrl()" value="Ctrl" style="width: 75px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: large;"> 
+
+<input type="button" onclick="altr()" value="Alt" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="val(' ')" value="         " style="width: 400px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+<input type="button" onclick="altr()" value="Alt" style="width: 46px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;">
+
+
+<input type="button" onclick="ctrl()" value="Ctrl" style="width: 100px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: larger;"> 
+
+<br>
+
+<br>
+
+
+<input type="button" onclick="location.reload()" value="Refresh" style="width: 100px; height: 36px; margin-bottom: 5px;font-weight:bold;font-size: large;">
+
+<br>
+
+</p>
+<hr>
+</p>
+</center>
+</body>
+
+</html>
